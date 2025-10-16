@@ -48,7 +48,7 @@ footbalProject/
 
 ## 🚀 Quick Start Guide
 
-### ✅ Checklist Setup (Untuk Pemula)
+### ✅ Checklist Setup
 
 Ikuti checklist ini langkah demi langkah:
 
@@ -739,37 +739,6 @@ Untuk membantu pemahaman, berikut flow setup database:
 ```
 
 ---
-
-## 🎯 Tips untuk Pemula
-
-1. **Jangan skip verifikasi!**  
-   Setiap step ada command verifikasi. Jalankan untuk memastikan step berhasil.
-
-2. **Save password PostgreSQL Anda**  
-   Catat password PostgreSQL di tempat aman. Akan sering dipakai.
-
-3. **Baca error message**  
-   Jika ada error, baca pesan errornya. Biasanya sudah dijelaskan masalahnya.
-
-4. **Gunakan pgAdmin jika lebih nyaman**  
-   Tidak harus pakai terminal. pgAdmin lebih visual dan user-friendly.
-
-5. **Jangan ragu tanya**  
-   Jika stuck, buat issue di repository atau cari di troubleshooting section.
-
-6. **Backup data penting**  
-   Jika production, selalu backup database sebelum jalankan migration.
-
----
-
-## 📞 Bantuan Lebih Lanjut
-
-### Dokumentasi Lengkap
-
-- **Setup Guide:** `docs/SETUP_GUIDE.md` - Panduan setup lebih detail
-- **API Endpoints:** `docs/API_ENDPOINTS.md` - Dokumentasi semua endpoint
-- **Architecture:** `docs/ARCHITECTURE.md` - Arsitektur aplikasi
-- **PostgreSQL Setup:** `docs/POSTGRESQL_SETUP.md` - Setup PostgreSQL detail
 
 ### Import Postman Collection
 
