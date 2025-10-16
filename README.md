@@ -597,30 +597,6 @@ Pastikan semua repository files sudah menggunakan `RETURNING id` pattern untuk P
 
 ## 📝 Development Notes
 
-### Perbedaan MySQL vs PostgreSQL
-
-Project ini menggunakan **PostgreSQL**, bukan MySQL. Perbedaan utama:
-
-| Feature            | MySQL            | PostgreSQL     |
-| ------------------ | ---------------- | -------------- |
-| Placeholder        | `?`              | `$1, $2, ...`  |
-| Get Last Insert ID | `LastInsertId()` | `RETURNING id` |
-| Enum Types         | VARCHAR          | Custom ENUM    |
-| Boolean Type       | TINYINT          | BOOLEAN        |
-
-### Adding New Features
-
-1. Buat model di `internal/models/`
-2. Buat DTO di `internal/dto/`
-3. Buat repository di `internal/repository/`
-4. Buat service di `internal/service/`
-5. Buat handler di `internal/handler/`
-6. Buat validator di `internal/validator/`
-7. Daftarkan route di `internal/routes/`
-8. Buat migration SQL di `database/migrations/`
-
----
-
 ## 📂 File Penting
 
 - `cmd/api/main.go` - Entry point aplikasi
@@ -629,16 +605,6 @@ Project ini menggunakan **PostgreSQL**, bukan MySQL. Perbedaan utama:
 - `database/migrations/` - SQL migration files
 - `database/seeders/` - SQL seeder files
 - `.env` - Environment variables (buat manual)
-
----
-
-## 🤝 Contributing
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ---
 
