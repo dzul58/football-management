@@ -642,24 +642,6 @@ Project ini menggunakan **PostgreSQL**, bukan MySQL. Perbedaan utama:
 
 ---
 
-## 📄 License
-
-Distributed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-Developed for Perusahaan XYZ
-
----
-
-## 📞 Support
-
-Untuk pertanyaan atau dukungan, silakan buat issue di repository ini.
-
----
-
 **⚡ Quick Commands Recap:**
 
 Untuk yang sudah familiar dengan terminal, berikut ringkasan command:
