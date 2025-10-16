@@ -91,7 +91,7 @@ git --version
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/dzul58/football-management
 cd footbalProject
 ```
 
