@@ -1,0 +1,449 @@
+{
+  "info": {
+    "name": "Football Management API",
+    "description": "API collection for Football Management System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/health",
+          "host": ["{{base_url}}"],
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "Teams",
+      "item": [
+        {
+          "name": "Create Team",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Persija Jakarta\",\n  \"logo_url\": \"https://example.com/logos/persija.png\",\n  \"founded_year\": 1928,\n  \"home_address\": \"Jl. Gatot Subroto, Jakarta\",\n  \"home_city\": \"Jakarta\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/teams",
+              "host": ["{{base_url}}"],
+              "path": ["teams"]
+            }
+          }
+        },
+        {
+          "name": "Get All Teams",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/teams?page=1&limit=10",
+              "host": ["{{base_url}}"],
+              "path": ["teams"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Team by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/teams/1",
+              "host": ["{{base_url}}"],
+              "path": ["teams", "1"]
+            }
+          }
+        },
+        {
+          "name": "Update Team",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Persija Jakarta Updated\",\n  \"home_city\": \"Jakarta Selatan\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/teams/1",
+              "host": ["{{base_url}}"],
+              "path": ["teams", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Team",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/teams/1",
+              "host": ["{{base_url}}"],
+              "path": ["teams", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Players",
+      "item": [
+        {
+          "name": "Create Player",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"team_id\": 1,\n  \"name\": \"Andritany Ardhiyasa\",\n  \"height\": 183.00,\n  \"weight\": 75.00,\n  \"position\": \"Penjaga Gawang\",\n  \"jersey_number\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/players",
+              "host": ["{{base_url}}"],
+              "path": ["players"]
+            }
+          }
+        },
+        {
+          "name": "Get All Players",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/players?page=1&limit=10",
+              "host": ["{{base_url}}"],
+              "path": ["players"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Player by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/players/1",
+              "host": ["{{base_url}}"],
+              "path": ["players", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Players by Team",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/teams/1/players",
+              "host": ["{{base_url}}"],
+              "path": ["teams", "1", "players"]
+            }
+          }
+        },
+        {
+          "name": "Update Player",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Andritany Updated\",\n  \"jersey_number\": 21\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/players/1",
+              "host": ["{{base_url}}"],
+              "path": ["players", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Player",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/players/1",
+              "host": ["{{base_url}}"],
+              "path": ["players", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Matches",
+      "item": [
+        {
+          "name": "Create Match",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"match_date\": \"2024-10-20\",\n  \"match_time\": \"15:30:00\",\n  \"home_team_id\": 1,\n  \"away_team_id\": 2\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/matches",
+              "host": ["{{base_url}}"],
+              "path": ["matches"]
+            }
+          }
+        },
+        {
+          "name": "Get All Matches",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/matches?page=1&limit=10",
+              "host": ["{{base_url}}"],
+              "path": ["matches"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Match by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/matches/1",
+              "host": ["{{base_url}}"],
+              "path": ["matches", "1"]
+            }
+          }
+        },
+        {
+          "name": "Update Match",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"match_date\": \"2024-10-21\",\n  \"status\": \"Scheduled\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/matches/1",
+              "host": ["{{base_url}}"],
+              "path": ["matches", "1"]
+            }
+          }
+        },
+        {
+          "name": "Update Match Result",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"home_score\": 2,\n  \"away_score\": 1,\n  \"goals\": [\n    {\n      \"player_id\": 3,\n      \"goal_time\": \"15\"\n    },\n    {\n      \"player_id\": 3,\n      \"goal_time\": \"67\"\n    },\n    {\n      \"player_id\": 8,\n      \"goal_time\": \"82\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/matches/1/result",
+              "host": ["{{base_url}}"],
+              "path": ["matches", "1", "result"]
+            }
+          }
+        },
+        {
+          "name": "Delete Match",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/matches/1",
+              "host": ["{{base_url}}"],
+              "path": ["matches", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Goals",
+      "item": [
+        {
+          "name": "Create Goal",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"match_id\": 1,\n  \"player_id\": 3,\n  \"goal_time\": \"45+2\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/goals",
+              "host": ["{{base_url}}"],
+              "path": ["goals"]
+            }
+          }
+        },
+        {
+          "name": "Get Goals by Match",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/matches/1/goals",
+              "host": ["{{base_url}}"],
+              "path": ["matches", "1", "goals"]
+            }
+          }
+        },
+        {
+          "name": "Delete Goal",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/goals/1",
+              "host": ["{{base_url}}"],
+              "path": ["goals", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "item": [
+        {
+          "name": "Get Match Report",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/reports/matches/1",
+              "host": ["{{base_url}}"],
+              "path": ["reports", "matches", "1"]
+            }
+          }
+        },
+        {
+          "name": "Get Team Statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/reports/teams/1/statistics",
+              "host": ["{{base_url}}"],
+              "path": ["reports", "teams", "1", "statistics"]
+            }
+          }
+        },
+        {
+          "name": "Get Player Statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/reports/players/1/statistics",
+              "host": ["{{base_url}}"],
+              "path": ["reports", "players", "1", "statistics"]
+            }
+          }
+        },
+        {
+          "name": "Get Top Scorers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/reports/top-scorers?limit=10",
+              "host": ["{{base_url}}"],
+              "path": ["reports", "top-scorers"],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080/api/v1",
+      "type": "string"
+    }
+  ]
+}

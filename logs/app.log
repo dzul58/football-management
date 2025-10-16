@@ -1,0 +1,65 @@
+INFO: 2025/10/16 23:29:55 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/16 23:29:55 logger.go:37: Database connected successfully
+INFO: 2025/10/16 23:30:38 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/16 23:30:38 logger.go:37: Database connected successfully
+INFO: 2025/10/16 23:32:01 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/16 23:32:01 logger.go:37: Database connected successfully
+INFO: 2025/10/16 23:32:01 logger.go:37: Server starting on localhost:8080
+INFO: 2025/10/16 23:32:27 logger.go:37: 127.0.0.1 | 200 | 146.417µs | GET | /api/v1/health
+ERROR: 2025/10/16 23:32:35 logger.go:45: 127.0.0.1 | 500 | 44.185292ms | GET | /api/v1/teams
+INFO: 2025/10/16 23:34:19 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/16 23:34:19 logger.go:37: Database connected successfully
+INFO: 2025/10/16 23:34:19 logger.go:37: Server starting on localhost:8080
+INFO: 2025/10/16 23:34:42 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/16 23:34:42 logger.go:37: Database connected successfully
+INFO: 2025/10/16 23:34:42 logger.go:37: Server starting on localhost:8080
+INFO: 2025/10/16 23:34:55 logger.go:37: 127.0.0.1 | 200 | 62.601458ms | GET | /api/v1/teams
+INFO: 2025/10/16 23:35:06 logger.go:37: 127.0.0.1 | 200 | 34.327459ms | GET | /api/v1/players
+INFO: 2025/10/16 23:35:13 logger.go:37: 127.0.0.1 | 200 | 43.128834ms | GET | /api/v1/matches
+INFO: 2025/10/16 23:39:32 logger.go:37: 127.0.0.1 | 200 | 5.070166ms | GET | /api/v1/health
+INFO: 2025/10/16 23:39:38 logger.go:37: 127.0.0.1 | 200 | 34.596167ms | GET | /api/v1/teams
+INFO: 2025/10/16 23:39:43 logger.go:37: 127.0.0.1 | 200 | 1.68475ms | GET | /api/v1/teams/1
+INFO: 2025/10/16 23:39:49 logger.go:37: 127.0.0.1 | 200 | 784.916µs | GET | /api/v1/teams/3
+INFO: 2025/10/16 23:40:03 logger.go:37: 127.0.0.1 | 200 | 5.754625ms | GET | /api/v1/players
+INFO: 2025/10/16 23:40:10 logger.go:37: 127.0.0.1 | 200 | 2.25175ms | GET | /api/v1/teams/1/players
+INFO: 2025/10/16 23:45:15 logger.go:37: 127.0.0.1 | 200 | 9.569334ms | GET | /api/v1/teams
+INFO: 2025/10/16 23:51:11 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/16 23:51:11 logger.go:37: Database connected successfully
+INFO: 2025/10/16 23:51:11 logger.go:37: Server starting on localhost:8080
+INFO: 2025/10/16 23:51:19 logger.go:37: 127.0.0.1 | 200 | 14.295167ms | GET | /api/v1/teams
+WARN: 2025/10/16 23:51:26 logger.go:53: 127.0.0.1 | 400 | 3.133458ms | POST | /api/v1/teams
+INFO: 2025/10/16 23:51:31 logger.go:37: 127.0.0.1 | 200 | 1.725ms | GET | /api/v1/teams
+INFO: 2025/10/16 23:51:36 logger.go:37: 127.0.0.1 | 200 | 784.167µs | GET | /api/v1/teams/3
+INFO: 2025/10/16 23:53:36 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/16 23:53:36 logger.go:37: Database connected successfully
+INFO: 2025/10/16 23:53:36 logger.go:37: Server starting on localhost:8080
+INFO: 2025/10/17 00:21:39 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/17 00:21:39 logger.go:37: Database connected successfully
+INFO: 2025/10/17 00:21:39 logger.go:37: Server starting on localhost:8080
+INFO: 2025/10/17 00:21:42 logger.go:37: 127.0.0.1 | 200 | 18.609417ms | GET | /api/v1/teams/3
+INFO: 2025/10/17 00:21:45 logger.go:37: 127.0.0.1 | 200 | 4.418917ms | GET | /api/v1/teams
+INFO: 2025/10/17 00:21:51 logger.go:37: 127.0.0.1 | 200 | 6.100959ms | GET | /api/v1/matches
+INFO: 2025/10/17 00:22:00 logger.go:37: 127.0.0.1 | 200 | 1.775458ms | GET | /api/v1/matches/1
+WARN: 2025/10/17 00:26:01 logger.go:53: 127.0.0.1 | 400 | 4.649584ms | PUT | /api/v1/matches/6/result
+WARN: 2025/10/17 00:26:56 logger.go:53: 127.0.0.1 | 400 | 5.791709ms | PUT | /api/v1/matches/6/result
+WARN: 2025/10/17 00:27:42 logger.go:53: 127.0.0.1 | 400 | 183.208µs | PUT | /api/v1/matches/6/result
+WARN: 2025/10/17 00:28:24 logger.go:53: 127.0.0.1 | 400 | 23.020042ms | PUT | /api/v1/matches/6/result
+WARN: 2025/10/17 00:29:03 logger.go:53: 127.0.0.1 | 400 | 4.4435ms | PUT | /api/v1/matches/6/result
+WARN: 2025/10/17 00:29:59 logger.go:53: 127.0.0.1 | 400 | 8.597791ms | PUT | /api/v1/matches/6/result
+WARN: 2025/10/17 00:31:58 logger.go:53: 127.0.0.1 | 400 | 5.643625ms | PUT | /api/v1/matches/1/result
+INFO: 2025/10/17 00:33:10 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/17 00:33:10 logger.go:37: Database connected successfully
+INFO: 2025/10/17 00:33:10 logger.go:37: Server starting on localhost:8080
+WARN: 2025/10/17 00:33:41 logger.go:53: 127.0.0.1 | 400 | 13.804208ms | PUT | /api/v1/matches/6/result
+WARN: 2025/10/17 00:34:00 logger.go:53: 127.0.0.1 | 400 | 3.01675ms | PUT | /api/v1/matches/6/result
+INFO: 2025/10/17 00:34:56 logger.go:37: 127.0.0.1 | 200 | 35.298166ms | PUT | /api/v1/matches/6/result
+INFO: 2025/10/17 00:52:24 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/17 00:52:24 logger.go:37: Database connected successfully
+INFO: 2025/10/17 00:52:24 logger.go:37: Server starting on localhost:8080
+INFO: 2025/10/17 00:52:29 logger.go:37: 127.0.0.1 | 200 | 8.103666ms | GET | /api/v1/matches
+INFO: 2025/10/17 00:52:35 logger.go:37: 127.0.0.1 | 200 | 3.951459ms | GET | /api/v1/players
+INFO: 2025/10/17 00:52:41 logger.go:37: 127.0.0.1 | 200 | 1.106959ms | GET | /api/v1/players/1
+INFO: 2025/10/17 00:54:05 logger.go:37: Starting Football Management API v1.0.0 in development mode
+INFO: 2025/10/17 00:54:05 logger.go:37: Database connected successfully
+INFO: 2025/10/17 00:54:05 logger.go:37: Server starting on localhost:8080
+INFO: 2025/10/17 00:54:08 logger.go:37: 127.0.0.1 | 200 | 11.328458ms | GET | /api/v1/players/1
