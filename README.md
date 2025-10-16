@@ -666,7 +666,7 @@ Untuk yang sudah familiar dengan terminal, berikut ringkasan command:
 
 ```bash
 # 1. Clone & Setup
-git clone <repo-url> && cd footbalProject
+git clone https://github.com/dzul58/football-management && cd footbalProject
 go mod download
 
 # 2. Create Database
