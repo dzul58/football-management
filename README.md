@@ -595,8 +595,6 @@ Pastikan semua repository files sudah menggunakan `RETURNING id` pattern untuk P
 
 ---
 
-## 📝 Development Notes
-
 ## 📂 File Penting
 
 - `cmd/api/main.go` - Entry point aplikasi
